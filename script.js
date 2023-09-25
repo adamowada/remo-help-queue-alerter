@@ -29,7 +29,7 @@ const callback = function(mutationsList, observer) {
     for(let mutation of mutationsList) {
         if (mutation.type === 'childList' || mutation.type === 'characterData') {
             beep(0.5, 440, 1); // Beep for 0.5 seconds with 440Hz frequency at maximum volume
-            alert('Text content changed!');
+            alert('Help Queue Changed!');
         }
     }
 };
